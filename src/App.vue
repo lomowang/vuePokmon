@@ -26,7 +26,7 @@ import { computed, onMounted, ref } from 'vue';
 
 <template>
   <div class="section text">
-    怎樣把這麼大規模升級的相機塞進來？
+    還是有下一步
   </div>
   <div id="section2" class="section" :style="{'--scale':progress}" :class="{sticky:fixClass}">
     <div class="phone">
@@ -42,7 +42,7 @@ import { computed, onMounted, ref } from 'vue';
     </div>
 
   </div>
-  <div class="section text">怎樣把這麼大規模升級的相機塞進來？</div>
+  <div class="section text">該儲值咖啡信仰了</div>
 
 </template>
 

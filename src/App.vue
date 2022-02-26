@@ -20,7 +20,7 @@ import { computed, onMounted, ref } from 'vue';
   })
   const fixClass = computed(()=>{
     return progress.value > 1
-  })
+  }) 
 
 </script>
 
@@ -29,20 +29,11 @@ import { computed, onMounted, ref } from 'vue';
     還是有下一步
   </div>
   <div id="section2" class="section" :style="{'--scale':progress}" :class="{sticky:fixClass}">
-    <div class="phone">
-      <img src="https://picsum.photos/id/684/1920/1200">
-      <div class="rect"></div>
-    </div>
-
+   
   </div>
-  <div id="section3" class="section" :class="{static:fixClass}">
-    <div class="phone">
-      <img src="https://picsum.photos/id/684/1920/1200">
-      <div class="rect"></div>
-    </div>
-
+  <div class="section text">該儲值咖啡信仰了
   </div>
-  <div class="section text">該儲值咖啡信仰了</div>
+
 
 </template>
 
@@ -76,22 +67,11 @@ import { computed, onMounted, ref } from 'vue';
     background-color: black;
   } 
 
-  /* 可以把畫面定住，讓下方畫面滑過去 */
-  /* #section2{
-    position: sticky;
-    top: 0;
-    left: 0;
-    --scale:3
-    }  */
+ 
 
     #section2{
      --scale:3;
     } 
-    /* 可以讓畫面不受前一畫面（position: sticky）影響，往上滑動後，從前方滑過去 */
-  /* #section3{
-    position: static;
-     --scale:1
-    }  */
 
     #section3{     
        --scale:1;
